@@ -13,6 +13,7 @@ set showmode
 set ruler
 set showcmd
 set incsearch
+set noautochdir
 
 if has("vms")
 	set nobackup

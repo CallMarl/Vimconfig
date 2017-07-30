@@ -4,7 +4,7 @@ set guifont=Consolas:h13
 set guioptions-=T
 set ma
 set backspace=indent,eol,start
-set listchars=tab:».,eol:$,nbsp:.,trail:•,extends:>,precedes:<
+set listchars=tab:».,eol:$,nbsp:.,trail:.,extends:>,precedes:<
 set autochdir
 set autoindent
 set backup
