@@ -1,4 +1,5 @@
 silent! map <C-n> :NERDTreeFocus<CR>
+silent! map <C-m> :call Insert_header_42() <CR>
 silent! map <A-p> :lcd %:p:h<CR>
 silent! map <A-q> :cd %:p:h<CR>
 silent! map <A-/> :set nohlsearch<CR>
