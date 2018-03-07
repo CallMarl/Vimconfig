@@ -1,5 +1,8 @@
-"Personnalisation de l'apparence de vim
 colorscheme molokai
+colorscheme todo
+"Garde le theme de todo_syntax
+source $HOME/.vim/bundle/todo_syntax/colors/todo.vim
+"Personnalisation de l'apparence de vim
 set guifont=Consolas:h13
 set guioptions-=T
 set ma
@@ -14,6 +17,9 @@ set ruler
 set showcmd
 set incsearch
 set noautochdir
+set nu
+set list
+"set nohlsearch
 
 if has("vms")
 	set nobackup
@@ -21,7 +27,6 @@ endif
 
 if &t_Co > 1 || has("gui_running")
 	syntax on
-	set hlsearch
 endif
 
 
@@ -31,3 +36,5 @@ if has("autocmd")
 		autocmd FileType text setlocal textwidth=78
 	augroup END
 endif
+
+let NERDTreeIgnore = ['\.o$', '\~$', '\*$']
