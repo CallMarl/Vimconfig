@@ -19,7 +19,16 @@ set incsearch
 set noautochdir
 set nu
 set list
-"set nohlsearch
+
+set laststatus=2
+set statusline=%#LineNr#
+set statusline+=\"%f\"
+set statusline+=\ %LL,
+set statusline+=\ %{\ line2byte(line(\"$\")+1)-1\ }C
+set statusline+=%m
+set statusline+=%=
+set statusline+=0x%B\ \
+set statusline+=\ l:%l\ c:%v
 
 if has("vms")
 	set nobackup
